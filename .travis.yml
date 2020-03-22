@@ -4,7 +4,6 @@ services:
 
 before_install:
   - docker build -t maninduw/docker-react -f Dockerfile.dev .
-  - docker run
 
 script:
   - docker run -e CI=true maninduw/docker-react npm run test
